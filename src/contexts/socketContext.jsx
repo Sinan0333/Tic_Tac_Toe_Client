@@ -10,6 +10,7 @@ export const useSocket = () => {
 }
 
 export const SocketProvider = ({children}) => {
+    console.log(import.meta.env)
     const socket = useMemo(()=>io(import.meta.env.VITE_BASE_URL),[])
     return (
         <SocketContext.Provider value={socket}>
