@@ -21,7 +21,7 @@ function App() {
             <Route path='/' element={<Home />} />
             <Route path='/home' element={<Home />} />
             <Route path='/play/:_id' element={<Play />} />
-            <Route path='/end-game' element={<EndGame />} />
+            <Route path='/end-game/:win' element={<EndGame />} />
           </Route>
         </Routes>
       </Suspense>

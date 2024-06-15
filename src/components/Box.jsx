@@ -19,7 +19,7 @@ function Box({opponentInfo,setOpponentInfo}) {
         setBlocks(updatedArray);
 
         const win = checkWin(updatedArray);
-        if(win) navigate('/end-game')
+        if(win) navigate(`/end-game/${win}`)
 
         socket.emit("play",{to:opponentInfo.socketId,data:updatedArray})
         socket.emit("chang_turn",opponentInfo.socketId)
@@ -34,7 +34,7 @@ function Box({opponentInfo,setOpponentInfo}) {
         socket.on("play",(data)=>{
             setBlocks(data)
             const win = checkWin(data);
-            if(win) navigate('/end-game')
+            if(win) navigate(`/end-game/${win}`)
         })
 
         socket.on("chang_turn",(data)=>{
