@@ -74,7 +74,7 @@ function SignIn() {
                 <div className="mt-12 flex flex-col items-center">
                     <div className="w-full flex-1 mt-8">
                         <div className="flex flex-col items-center">
-                            <button onClick={() => login()}
+                            {/* <button onClick={() => login()}
                                 className="w-full max-w-xs font-bold shadow-sm rounded-lg py-3 bg-green-100 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
                                 <div className="bg-white p-2 rounded-full">
                                     <svg className="w-4" viewBox="0 0 533.5 544.3">
@@ -95,16 +95,16 @@ function SignIn() {
                                 <span className="ml-4">
                                     Sign In with Google
                                 </span>
-                            </button>
+                            </button> */}
     
                         </div>
     
-                        <div className="my-12 border-b text-center">
+                        {/* <div className="my-12 border-b text-center">
                             <div
                                 className="leading-none px-2 inline-block text-sm text-gray-600 tracking-wide font-medium bg-white transform translate-y-1/2">
                                 Or sign In with Cartesian E-mail
                             </div>
-                        </div>
+                        </div> */}
     
                         <div className="mx-auto max-w-xs">
                             <input onChange={(e)=>setEmail(e.target.value)} value={email}
